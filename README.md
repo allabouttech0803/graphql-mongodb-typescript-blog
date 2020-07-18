@@ -1,3 +1,4 @@
 # graphql-mongodb-typescript-blog
 
-[See tutorial](https://universal-tutorial.com)
+Please follow the detailed tutorial in the below link
+[See tutorial](https://www.universal-tutorial.com/graphql-tutorials/crud-with-graphql-nodejs-mongo-typescript)

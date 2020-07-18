@@ -1,6 +1,5 @@
 /node_modules
 /dist
-
 # misc
 /.sass-cache
 /connect.lock
@@ -16,4 +15,5 @@ Thumbs.db
 
 # Config
 conf/env.json
-.env
+.env*
+

@@ -27,7 +27,11 @@ type User {
 }
 
 type Query {
-  blogs(title: String!): [Blog]
+  blogs: [Blog]
+}
+
+type Query {
+  blog(url: String!): Blog
 }
 
 type Mutation {
@@ -36,6 +40,34 @@ type Mutation {
 
 type Mutation {
   updateBlog(id: String, input: InputBlog!): Blog
+}
+
+type Mutation {
+  deleteBlog(id: String): Blog
+}
+
+type Mutation {
+  addComment(blogUrl: String!, commentDescription: String!): Blog
+}
+
+type Mutation {
+  updateComment(id: String, input: InputComment!): Comment
+}
+
+type Mutation {
+  deleteComment(id: String): Comment
+}
+
+type Query {
+  token(email: String!): String!
+}
+
+type Mutation {
+  addUser(input: InputUser!): User
+}
+
+type Mutation {
+  updateUser(id: String, input: InputUser!): User
 }
 
 input InputBlog {
@@ -51,6 +83,16 @@ input InputBlog {
   images: [String]
 }
 
-type Token {
-  token: String!
+input InputComment {
+  comment: String
+  createdAt: String
+  modifiedAt: String
+  user: InputUser
+}
+
+input InputUser {
+  email: String
+  name: String
+  provider: String
+  photoUrl: String
 }
