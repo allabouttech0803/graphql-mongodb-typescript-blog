@@ -24,7 +24,7 @@
     "@types/graphql": "14.0.7",
     "@types/graphql-depth-limit": "1.1.0",
     "@types/jsonwebtoken": "^8.5.0",
-    "@types/mongoose": "^5.7.21",
+    "@types/mongoose": "^5.7.32",
     "@types/node": "11.9.4",
     "graphql-depth-limit": "1.1.0",
     "graphql-import": "0.7.1",
@@ -42,7 +42,7 @@
     "graphql": "14.5.8",
     "http": "0.0.0",
     "jsonwebtoken": "^8.5.1",
-    "mongoose": "^5.9.16",
+    "mongoose": "^5.9.25",
     "ncp": "2.0.0"
   }
 }
