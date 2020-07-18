@@ -1,0 +1,56 @@
+type Comment {
+  comment: String
+  createdAt: String
+  modifiedAt: String
+  user: User
+}
+
+type Blog {
+  title: String
+  description: String
+  body: String
+  keywords: String
+  comments: [Comment]
+  category: String
+  url: String
+  adsRequired: Boolean
+  createdAt: String
+  modifiedAt: String
+  images: [String]
+}
+
+type User {
+  email: String
+  name: String
+  provider: String
+  photoUrl: String
+}
+
+type Query {
+  blogs(title: String!): [Blog]
+}
+
+type Mutation {
+  addBlog(input: InputBlog!): Blog
+}
+
+type Mutation {
+  updateBlog(id: String, input: InputBlog!): Blog
+}
+
+input InputBlog {
+  title: String
+  description: String
+  body: String
+  keywords: String
+  category: String
+  url: String
+  adsRequired: Boolean
+  createdAt: String
+  modifiedAt: String
+  images: [String]
+}
+
+type Token {
+  token: String!
+}
